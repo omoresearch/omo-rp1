@@ -1,0 +1,23 @@
+# User service for the Omo RP1 sidecar. Install:
+#   cp contrib/rp1-sim.service ~/.config/systemd/user/ && systemctl --user daemon-reload
+#   systemctl --user enable --now rp1-sim
+# Edit WorkingDirectory/ExecStart if you cloned somewhere other than ~/omo-rp1.
+[Unit]
+Description=Omo RP1 MuJoCo sidecar (127.0.0.1:8797)
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/omo-rp1/sidecar
+ExecStart=%h/omo-rp1/sidecar/.venv/bin/python %h/omo-rp1/sidecar/server.py
+Environment=RP1_PORT=8797
+Environment=OMP_NUM_THREADS=1
+Environment=OPENBLAS_NUM_THREADS=1
+Environment=MKL_NUM_THREADS=1
+Environment=PYTHONUNBUFFERED=1
+Nice=10
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

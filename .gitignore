@@ -1,0 +1,21 @@
+# build outputs
+mod/build/
+mod/deps/*.jar
+# sidecar runtime: venv, RoboParty files fetched on your machine (never commit them), derived mesh cache
+sidecar/.venv/
+sidecar/upstream/
+sidecar/model_cache.json
+sidecar/model_cache.json.tmp
+sidecar/preview/
+# never commit RoboParty's meshes or policies, wherever they end up
+*.STL
+*.stl
+*.onnx
+*.npz
+__pycache__/
+*.pyc
+*.class
+*.part
+*.tmp
+*.log
+backup-*/

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "rp1",
+  "version": "1.0.0",
+  "name": "Omo RP1",
+  "description": "Omo RP1: renders RoboParty's RP1 humanoid, simulated live in MuJoCo by the local sidecar (127.0.0.1:8797), articulated in your world, with !rp1 chat commands handled client-side. Optional Simple Voice Chat plugin streams push-to-talk to a local voice backend you provide (127.0.0.1:8792).",
+  "contact": { "homepage": "https://www.omo.sh", "sources": "https://github.com/omoresearch/omo-rp1" },
+  "authors": ["Omo Research"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.yifan.rp1.Rp1"],
+    "voicechat": ["dev.yifan.rp1.Rp1VoicePlugin"]
+  },
+  "suggests": {
+    "voicechat": ">=2.6.0"
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~26.2"
+  }
+}

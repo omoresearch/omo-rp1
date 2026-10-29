@@ -1,0 +1,5 @@
+# Sidecar runtime (tested: Python 3.14, mujoco 3.17, onnxruntime 1.31, numpy 2.5)
+mujoco>=3.3
+numpy>=2.0
+onnxruntime>=1.20
+pillow>=10          # render_preview.py and docs/media/make_renders.py only
