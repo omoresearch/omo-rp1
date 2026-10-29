@@ -33,11 +33,11 @@
 ## Straight from the stream
 
 <p align="center">
-  <a href="https://www.instagram.com/reel/DfBDAaxDNFb/"><img src="docs/media/ingame-lab.webp" alt="Recorded in Minecraft: the RP1 humanoid moves under its own policy in the white Omo Space lab, next to a Microduck" width="100%"></a>
+  <a href="https://www.instagram.com/reel/DfA07BVAaez/"><img src="docs/media/ingame-lab.webp" alt="Recorded in Minecraft: the RP1 humanoid moves under its own policy in the white Omo Space lab, next to a Microduck" width="100%"></a>
 </p>
 
 <p align="center">
-  <a href="https://www.instagram.com/reel/DfBDAaxDNFb/"><b>▶ Watch the robot-lab reel on Instagram</b></a> (with sound) &nbsp;·&nbsp; live on <a href="https://www.twitch.tv/yiifannn">Twitch</a>
+  <a href="https://www.instagram.com/reel/DfA07BVAaez/"><b>▶ Watch the RP1 reel on Instagram</b></a> (with sound) &nbsp;·&nbsp; live on <a href="https://www.twitch.tv/yiifannn">Twitch</a>
 </p>
 
 <sub>An in-game loop from the robot lab in our Omo Space world: the RP1 on the left, the
@@ -203,7 +203,7 @@ Re-run against this exact tree (Linux x86_64, upstream pinned at RoboParty commi
 
 | Suite | Result |
 |---|---|
-| `sidecar/test_headless.py`: stand, talk gesture, walk, stop, turn, follow, leash, reset, falls, wave, dance, step budget, model | **re-run pending**: the first 10 of 19 checks pass (stand, talk, walk, stop, turn, follow) |
+| `sidecar/test_headless.py`: stand, talk gesture, walk, stop, turn, follow, leash, reset, falls, wave, dance, step budget, model | **14/19 pass so far** (stand, talk, walk, stop, turn, follow, leash, reset, wave); dance and the last checks run after the stream |
 | `mod/build.sh`: plain `javac` build of the mod, voice plugin included | **builds** (50.7 kB jar) |
 | `mod/build.sh test`: mod harness against `mod/test/fake_sidecar.py` (parsing, mapping, model bake, network, sidecar-down) | **70/70 pass** |
 | `mod/build.sh voicetest`: PCM framing, config, head position, focus arbitration, real Opus round trip | **28/28 pass** |
