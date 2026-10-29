@@ -6,7 +6,7 @@ policies from [Roboparty/roboparty_inference](https://github.com/Roboparty/robop
 (`robots/rp1_24dof`) on the CPU, in real time at 50 Hz, and serves its pose over HTTP on `127.0.0.1:8797` for the
 Fabric mod. API contract: [`CONTRACT.md`](CONTRACT.md).
 
-Licence: this directory is **GPL-3.0-or-later** ([`LICENSE`](LICENSE)), because `rp1_sim.py` ports the observation
+Licence: this directory is **GPL-3.0-only** ([`LICENSE`](LICENSE)), because `rp1_sim.py` ports the observation
 and action pipeline of RoboParty's GPL-3.0 deploy code. The robot files and policies are **not** in this repository:
 `fetch_upstream.py` downloads them from RoboParty's GitHub onto your machine at pinned commits (see
 [`../THIRD_PARTY_NOTICES.md`](../THIRD_PARTY_NOTICES.md)).

@@ -251,7 +251,7 @@ machine, not redistributed), the policies and deploy pipeline from
 [roboparty_inference](https://github.com/Roboparty/roboparty_inference) (GPL-3.0), the training config from
 [robolab](https://github.com/Roboparty/robolab) (BSD-3-Clause). Full list in
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Built by **[Omo Research](https://www.omo.sh)**.
-The mod is [MIT](LICENSE); the sidecar is [GPL-3.0-or-later](sidecar/LICENSE).
+The mod is [MIT](LICENSE); the sidecar is [GPL-3.0-only](sidecar/LICENSE).
 
 **NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR
 MICROSOFT.** Independent community project, not affiliated with or endorsed by RoboParty.

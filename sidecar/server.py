@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright (C) 2026 Omo Research. Part of Omo RP1 (sidecar/, GPL-3.0-or-later: see sidecar/LICENSE).
+# SPDX-License-Identifier: GPL-3.0-only
+# Copyright (C) 2026 Omo Research. Part of Omo RP1 (sidecar/, GPL-3.0-only: see sidecar/LICENSE).
 """RP1 MuJoCo sim sidecar - HTTP API on 127.0.0.1:8797 (see CONTRACT.md)."""
 
 import argparse

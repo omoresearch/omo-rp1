@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright (C) 2026 Omo Research. Part of Omo RP1 (sidecar/, GPL-3.0-or-later: see sidecar/LICENSE).
+# SPDX-License-Identifier: GPL-3.0-only
+# Copyright (C) 2026 Omo Research. Part of Omo RP1 (sidecar/, GPL-3.0-only: see sidecar/LICENSE).
 """Fetch only the needed RoboParty files into ./upstream/, at pinned commits. Idempotent.
 
 Nothing fetched here is redistributed by this repository: it is downloaded on your machine,

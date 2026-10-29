@@ -4,7 +4,7 @@
 
 The first public source drop of Omo RP1. No release build yet: build the mod from source.
 
-- **Sidecar** (GPL-3.0-or-later): RoboParty's RP1 (24-DoF) in MuJoCo at 500 Hz physics / 50 Hz policy, driven by
+- **Sidecar** (GPL-3.0-only): RoboParty's RP1 (24-DoF) in MuJoCo at 500 Hz physics / 50 Hz policy, driven by
   RoboParty's own ONNX policies: `policy.onnx` for walk, turn, follow and stand; `policy_wave.onnx` (motion
   tracking) for the wave; `policy_ufo.onnx` with a dance latent for a 30 s dance. Heading hold, a leash, walk-home,
   fall detection and auto-reset, a talking gesture for voice. Loopback HTTP API on 127.0.0.1:8797.

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright (C) 2026 Omo Research. Part of Omo RP1 (sidecar/, GPL-3.0-or-later: see sidecar/LICENSE).
+# SPDX-License-Identifier: GPL-3.0-only
+# Copyright (C) 2026 Omo Research. Part of Omo RP1 (sidecar/, GPL-3.0-only: see sidecar/LICENSE).
 """HTTP test against the running sidecar (default http://127.0.0.1:8797). Exercises the whole API, incl. a real walk,
 turn, follow, wave and reset, checking the robot actually moves and stays up."""
 

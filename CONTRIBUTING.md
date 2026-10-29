@@ -3,7 +3,7 @@
 Issues and PRs are welcome, especially renderer fixes, new RoboParty policies wired into the sidecar
 (`policy_amp`, `policy_rough`, `policy_interrupt` are fetched but not used yet), and macOS test reports.
 
-- **Sidecar changes** (`sidecar/`, GPL-3.0-or-later): run `sidecar/test_headless.py` (under `nice`, it is
+- **Sidecar changes** (`sidecar/`, GPL-3.0-only): run `sidecar/test_headless.py` (under `nice`, it is
   CPU-bound). For API changes also run `sidecar/test_http.py` against a test server on a spare port
   (`RP1_PORT=8817 .venv/bin/python server.py`, then `test_http.py http://127.0.0.1:8817`); don't point it at a
   sidecar you are playing with, because it walks, turns and resets the robot.
@@ -15,6 +15,6 @@ Issues and PRs are welcome, especially renderer fixes, new RoboParty policies wi
   `sidecar/model_cache.json` (it is derived from RoboParty's meshes). `.gitignore` covers them.
 
 By contributing you agree that your contribution is licensed under the licence of the directory you change
-(MIT for `mod/` and `docs/`, GPL-3.0-or-later for `sidecar/`).
+(MIT for `mod/` and `docs/`, GPL-3.0-only for `sidecar/`).
 
 Keep the sidecar loopback-only and the mod client-side.

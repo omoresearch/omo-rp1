@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright (C) 2026 Omo Research. Part of Omo RP1 (sidecar/, GPL-3.0-or-later: see sidecar/LICENSE).
+# SPDX-License-Identifier: GPL-3.0-only
+# Copyright (C) 2026 Omo Research. Part of Omo RP1 (sidecar/, GPL-3.0-only: see sidecar/LICENSE).
 """Headless (no HTTP) test of the RP1 sim, faster than real time. Prints PASS/FAIL per check + SUMMARY.
 
 Checks: stand 20 s, walk ~0.4 m/s forward (straightness), turn left/right ~90 deg, follow the player and stop

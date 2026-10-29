@@ -1,5 +1,10 @@
-# SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright (C) 2026 Omo Research. Part of Omo RP1 (sidecar/, GPL-3.0-or-later: see sidecar/LICENSE).
+# SPDX-License-Identifier: GPL-3.0-only
+# Copyright (C) 2026 Omo Research. Part of Omo RP1 (sidecar/, GPL-3.0-only: see sidecar/LICENSE).
+#
+# This file is a Python port, modified by Omo Research in October 2026, of the observation and action pipeline
+# in RoboParty's roboparty_inference (src/inference_node.cpp, src/obs_manager.cpp, robots/rp1_24dof/configs/*),
+# https://github.com/Roboparty/roboparty_inference at commit 7a11782,
+# Copyright (C) 2025-2026 Luo1imasi, licensed under the GNU General Public License v3.0.
 """RP1 (24-DoF) MuJoCo simulation core (no HTTP).
 
 Mirrors Roboparty `roboparty_inference` (src/inference_node.cpp + src/obs_manager.cpp) with

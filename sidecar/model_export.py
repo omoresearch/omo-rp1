@@ -1,5 +1,5 @@
-# SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright (C) 2026 Omo Research. Part of Omo RP1 (sidecar/, GPL-3.0-or-later: see sidecar/LICENSE).
+# SPDX-License-Identifier: GPL-3.0-only
+# Copyright (C) 2026 Omo Research. Part of Omo RP1 (sidecar/, GPL-3.0-only: see sidecar/LICENSE).
 """Build /model.json: body-local, decimated visual meshes with the MJCF material colours.
 
 version 1 fields (always present): per mesh "rgba", "verts", "tris".

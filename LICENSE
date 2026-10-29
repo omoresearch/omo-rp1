@@ -2,7 +2,7 @@ Omo RP1 is licensed per directory:
 
   mod/       MIT License (below)
   docs/      MIT License (below)
-  sidecar/   GNU General Public License v3.0 or later (see sidecar/LICENSE)
+  sidecar/   GNU General Public License v3.0 only (see sidecar/LICENSE)
 
 The sidecar is GPL because sidecar/rp1_sim.py ports the observation and action
 pipeline of RoboParty's roboparty_inference deploy code, which is GPL-3.0.
