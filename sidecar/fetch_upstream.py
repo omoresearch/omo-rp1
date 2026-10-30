@@ -13,6 +13,7 @@ straight from RoboParty's own GitHub repositories.
 Pins can be overridden, e.g. RP1_REV_RP1_DESCRIPTION=master ./fetch_upstream.py (untested combinations).
 Set GITHUB_TOKEN to lift the anonymous GitHub API rate limit (one API call per run is needed).
 """
+import hashlib
 import json
 import os
 import re
@@ -48,7 +49,11 @@ def fetch(repo, path):
     os.makedirs(os.path.dirname(dst), exist_ok=True)
     data = get(f"https://raw.githubusercontent.com/{ORG}/{repo}/{rev(repo)}/{path}")
     if data.startswith(b"version https://git-lfs"):  # Git LFS pointer -> the real file
+        oid = re.search(rb"^oid sha256:([0-9a-f]{64})$", data, re.M)
         data = get(f"https://media.githubusercontent.com/media/{ORG}/{repo}/{rev(repo)}/{path}", timeout=300)
+        # The pointer comes from the pinned commit, so its hash pins the large file too.
+        if not oid or hashlib.sha256(data).hexdigest() != oid.group(1).decode():
+            sys.exit(f"{repo}/{path}: downloaded file does not match the pinned commit's LFS hash; refusing")
     with open(dst + ".tmp", "wb") as fh:
         fh.write(data)
     os.replace(dst + ".tmp", dst)

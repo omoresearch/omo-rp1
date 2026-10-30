@@ -13,6 +13,8 @@ Upstream files (fetched on your machine by `fetch_upstream.py`, never redistribu
 - Training/sim2sim reference: `robolab` (actuator + env configs the policies were trained with).
 
 ## Sidecar HTTP API - 127.0.0.1:8797 only (never 0.0.0.0), JSON, no auth
+
+Requests that carry an `Origin` header (any web page, including the in-game web walls) or a `Host` other than `127.0.0.1` / `localhost` / `[::1]` (DNS rebinding) get `403`, so only local programs can drive the sim.
 Sim frame: MuJoCo world, z-up, metres, floor plane at z=0. Quaternions are [w,x,y,z].
 
 - `GET /health` -> `{"ok":true,"mode":"stand","fallen":false,"t":12.3,"policy":"policy.onnx","hz":50}`
